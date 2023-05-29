@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CustomViewAssigment</string>
+
+
+    <string name="omp_dashboard_lbl">OMP Dashboard</string>
+    <string name="in_progress_lbl">In Progress</string>
+    <string name="create_additional_npages_lbl">Create additional\nPages</string>
+    <string name="closed_tasks_lbl">Closed Tasks</string>
+    <string name="open_tasks_lbl">Open Tasks</string>
+    <string name="save_lbl">Save</string>
+    <string name="choose_your_client_lbl">Choose your client</string>
+    <string name="client_lbl">CLIENT</string>
+    <string name="project_name_lbl">PROJECT NAME</string>
+    <string name="write_your_project_name_lbl">Write Your Project Name</string>
+    <string name="choose_date_lbl">Choose Date</string>
+    <string name="assignee_lbl">ASSIGNEE</string>
+    <string name="category_lbl">CATEGORY</string>
+    <string name="design_lbl">Design</string>
+    <string name="frontend_lbl">Frontend</string>
+    <string name="backend_lbl">Backend</string>
+    <string name="description_lbl">Description</string>
+    <string name="attachments_lbl">ATTACHMENTS</string>
+    <string name="create_task_lbl">CREATE TASK</string>
+    <string name="message_lbl">MESSAGE</string>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnCancelProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            app:cardCornerRadius="25dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_baseline_close_black_24dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.example.customviewassigment.views.components.RoundedProfileImage
+            android:id="@+id/ivProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/btnCancelProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            app:cornerRadius="60dp"
+            app:isActive="true"
+            app:srcCompat="@drawable/avg" />
+
+        <RelativeLayout
+            android:id="@+id/rlUserDataProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCancelProfile"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/profile_user_data_background"
+            android:elevation="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/llClosedTaskProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/closed_tasks_lbl"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/text_regular" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:text="361"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:orientation="vertical"
+                tools:ignore="RelativeOverlap">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/open_tasks_lbl"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/text_regular" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llClosedTaskProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:gravity="center"
+                android:text="John Wick"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_22sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvJobProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameProfile"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Assisian"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="@dimen/text_18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMessageProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJobProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_18dp"
+                android:paddingStart="@dimen/margin_xxlarge"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_xxlarge"
+                android:paddingBottom="@dimen/margin_medium_2"
+                android:text="@string/message_lbl"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="@dimen/margin_large"
+                app:rippleColor="@color/colorPrimary" />
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvJobProfile"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_40dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/button_circle_background">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_baseline_share_accent_24dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvJobProfile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_40dp"
+                android:background="@drawable/button_circle_background">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/business" />
+
+            </FrameLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tlTitleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnMessageProfile"
+                android:layout_marginTop="@dimen/margin_large"
+                android:backgroundTint="@color/colorPrimary"
+                android:textAlignment="center"
+                app:tabBackground="@color/colorPrimary"
+                app:tabGravity="center"
+                app:tabIndicatorAnimationMode="linear"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorFullWidth="true"
+                app:tabIndicatorGravity="bottom"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="@dimen/margin_large"
+                app:tabPaddingStart="@dimen/margin_large"
+                app:tabRippleColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/colorPrimaryLight" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTaskProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlUserDataProfile"
+            android:background="@color/colorTransparent"
+            android:padding="@dimen/margin_large"
+            tools:listitem="@layout/view_pod_task" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
